@@ -66,7 +66,8 @@ def get_result_table(first_cell_type_expressions_path, second_cell_type_expressi
     z_test_p_values_d = check_dge_with_ztest(first_table, second_table)[1]
 
 
-    # Находим разницу в средних экспрессиях между 1 и 2 таблицами для каждого гена:
+    # Находим разницу в средних экспрессиях между 1 и 2 таблицами для каждого гена 
+    #(вычитаем среднюю экспрессию в NK-клетках из средней экспрессии в B-клетах):
     def calc_mean_difference(first_table, second_table):
 
         mean_diff = []
