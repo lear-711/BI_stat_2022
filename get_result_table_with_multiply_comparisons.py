@@ -106,4 +106,4 @@ def get_result_table(first_cell_type_expressions_path, second_cell_type_expressi
     results = pd.DataFrame(results)
     results.head()
 
-    results.to_csv("/content/drive/MyDrive/Статистика ИБ/" + save_results_table)
+    results.to_csv(save_results_table)
